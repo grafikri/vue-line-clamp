@@ -12,10 +12,7 @@ const directive = {
 
     $el.parentElement.appendChild($clone)
 
-    $clone.style = ""
-    $clone.style.display = "inline-block"
-    $clone.style.width = "initial"
-
+    $clone.style.cssText = "display: inline-block; width: initial"
 
     const spaces = ["Vestibulum facilisis", "Vestibulumfacilisis"].map(text => {
       $clone.textContent = text
@@ -58,10 +55,10 @@ const directive = {
 
 
     $el.textContent = newText
-    $clone.remove()
+    $clone.parentNode.removeChild($clone)
+    // $clone.remove()
 
 
-    console.log("this is log")
     // el.onscroll = (event) => {
     //   const status = getStatusChangesOfScroll(event.target, options)
     //   if (status !== "stable") {
