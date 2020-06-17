@@ -1,0 +1,32 @@
+{
+  "name": "@grafikri/vue-line-clamp",
+  "version": "0.1.0",
+  "description": "Line clamp for vue",
+  "main": "src/index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "release": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grafikri/vue-line-clamp"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "vue",
+    "vuejs",
+    "directive",
+    "vue-line-clamp",
+    "line-clamp",
+    "clamp"
+  ],
+  "author": "Serhan Coşkun",
+  "license": "ISC",
+  "devDependencies": {
+    "np": "^6.2.4",
+    "vuepress": "^1.5.2"
+  }
+}
